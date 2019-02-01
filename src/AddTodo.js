@@ -11,6 +11,7 @@ const CREATE_TODO = gql`
       complete
       text
       updatedAt
+      __typename
     }
   }
 `;
@@ -20,7 +21,9 @@ const ALL_TODOS = gql`
     allTodoes {
       id
       complete
+      text
       updatedAt
+      __typename
     }
   }
 `;

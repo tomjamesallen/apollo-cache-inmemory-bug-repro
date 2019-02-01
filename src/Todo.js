@@ -6,8 +6,9 @@ const fragment = gql`
   fragment LocalTodo on Todo {
     id
     complete
-    updatedAt
     text
+    updatedAt
+    __typename
   }
 `;
 

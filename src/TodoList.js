@@ -12,7 +12,9 @@ const ALL_TODOS = gql`
     allTodoes {
       id
       complete
+      text
       updatedAt
+      __typename
     }
   }
 `;
