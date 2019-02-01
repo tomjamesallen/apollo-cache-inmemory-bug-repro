@@ -63,11 +63,13 @@ class Todo extends Component {
     return (
       <li>
         <h2>id: {id}</h2>
-        {todo && (
+        {todo ? (
           <div>
             <p>Todo Found</p>
             <p>{todo.text}</p>
           </div>
+        ) : (
+          <p>Todo is {String(todo)}</p>
         )}
         <button onClick={this.reload}>Reload</button>
       </li>
