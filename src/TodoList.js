@@ -34,6 +34,8 @@ class TodoList extends Component {
                 return <p>Something went wrong</p>;
               }
 
+              console.log("data.allTodoes: ", data.allTodoes);
+
               return (
                 <ul>
                   {data.allTodoes.map(({ id }) => (

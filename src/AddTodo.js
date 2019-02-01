@@ -52,7 +52,6 @@ class AddTodo extends Component {
       const allTodosData = proxy.readQuery({
         query: ALL_TODOS
       });
-      console.log("allTodosData: ", allTodosData.allTodoes);
 
       proxy.writeQuery({
         query: ALL_TODOS,
