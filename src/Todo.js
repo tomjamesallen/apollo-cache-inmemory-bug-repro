@@ -5,10 +5,10 @@ import gql from "graphql-tag";
 const fragment = gql`
   fragment LocalTodo on Todo {
     id
-    # complete
-    # text
-    # updatedAt
-    # __typename
+    complete
+    text
+    updatedAt
+    __typename
   }
 `;
 
